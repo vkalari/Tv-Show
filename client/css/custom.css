@@ -1,0 +1,41 @@
+		.content {
+		    width: 1100px;
+		    border: 2px solid grey;
+		    padding: 20px;
+		    overflow: hidden;
+		}
+
+		.content img {
+		    margin-right: 15px;
+		    float: left;
+		}
+
+		.iconDetails {
+			margin-left:2%;
+			float:left; 
+			height:40px;
+			width:40px;	
+		} 
+
+		.container2 {
+			width:1050px;
+			height:auto;
+			padding:1%;
+		    float:left;
+		}
+		h4{margin:0}
+		.left {float:left;width:45px;}
+		.right {float:left;margin:0 0 0 5px;width:215px;}
+
+		a.button {
+ 		   -webkit-appearance: button;
+    		-moz-appearance: button;
+		    appearance: button;
+    		text-decoration: none;
+    		color: initial;
+
+		}
+
+		[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+        }	

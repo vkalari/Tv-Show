@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>TV Show App</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">	
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-resource.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.7/angular-sanitize.min.js"></script>
+
+
+	<script src="js/app.js"></script>
+	<script src="js/tvshow/tvshow.controller.js"></script>
+	<script src="js/tvshow/tvshow.service.js"></script>
+	<script src="js/tvshow/tvshow.directive.js"></script>
+
+	<script src="js/tvshow/show.controller.js"></script>
+	<script src="js/tvshow/show.service.js"></script>
+
+
+
+
+</head>
+<body ng-cloak ng-app="app">
+<div class="container">
+	
+	<nav class="navbar navbar-inverse nav-fixed-top">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">TV Shows</a>
+		</div>
+	<ul class="nav navbar-nav">
+		<li><a href="/">Home</a></li>
+	</ul>
+	</nav>
+
+	<div ng-view></div>
+</div>
+
+</body>
+</html>

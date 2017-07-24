@@ -1,0 +1,6 @@
+<div class="content">
+    <img ng-src="{{show.image.medium  || 'images/default.png'}}" image-Directive="images/default.png">
+	<h3>{{show.name}}</h3>
+    <div data-ng-bind-html='show.summary'></div>
+		<a class="btn btn-primary" style="float: right;" href="/show/{{show.id}}">Details</a>
+</div>

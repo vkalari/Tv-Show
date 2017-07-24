@@ -1,0 +1,23 @@
+<div class="jumbotron text-left" ng-controller="TvShowController">
+	<h2>Search for your favorate TV Show</h2>
+
+	<form>
+		<div class="form-group">
+			<input type="text" class="form-control" ng-model="q">
+		</div>
+			
+		<div class="form-group">
+			<div>
+				<button type="button" class="btn btn-primary" ng-click="getTvShow()">Search</button>
+			</div>
+		</div>
+	</form>
+    
+
+	<div ng-repeat="show in shows">
+		
+		<!--<div tv-directive class='directive'></div>-->
+		<tv-directive></tv-directive>
+	
+	</div>
+</div>

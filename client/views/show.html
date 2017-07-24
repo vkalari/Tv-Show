@@ -1,0 +1,20 @@
+<div class="content" ng-cloak>
+	<div style="width: 1050px; height: 400px;">
+		<h3>{{show.name}}</h3>
+		<p> {{show.genres.join(" | ")}} </p>		
+	    <img ng-src="{{show.image.medium  || 'images/default.png'}}" image-Directive="images/default.png">
+		<h3>Summary</h3>
+		<div data-ng-bind-html='show.summary'></div>
+	</div>	
+
+	<h3>Cast</h3>
+	<div class='container2' ng-repeat="cast in show._embedded.cast">
+
+	    <img ng-src="{{cast.person.image.medium || cast.character.image.medium || 'images/default.png'}}" class='iconDetails' image-Directive="images/default.png">
+
+		<div class="right">			
+			<div style="font-size:1.2em;width:500px;float:left;">    {{cast.person.name}}   ...   {{cast.character.name}}</div>
+		</div>
+    </div>	
+
+</div>
